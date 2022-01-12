@@ -9,7 +9,7 @@ export default function FunctionalComponent() {
     }
 
     return (
-        <div>
+        <div className='container-inputOnchange'>
             <h1>{title}</h1>
             <input onChange={(e) => inputHandler(e.target.value)} />
         </div>

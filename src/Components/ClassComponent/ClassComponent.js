@@ -6,15 +6,16 @@ export default class classComponent extends Component {
         super()
 
         this.state = {
-            title: "Class:"
+            title: "ClassComponent:"
         }
     }
     inputHandler = (text) => {
         console.log(text)
+        
     }
     render() {
         return (
-            <div>
+            <div className='container-inputOnchange'>
                 <h1>{this.state.title}</h1>
                 <input onChange={(e) => this.inputHandler(e.target.value)} />
             </div>
