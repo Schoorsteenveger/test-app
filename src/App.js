@@ -4,6 +4,7 @@ import ClassComponent from './Components/ClassComponent/ClassComponent';
 import FunctionalComponent from './Components/FunctionalComponent/FunctionalComponent';
 import Navbar from './Components/Navbar/Navbar';
 import CountButton from './Components/CountButton/CountButton'
+import SearchBar from './Components/SearchBar/SearchBar';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <ClassComponent />
       <FunctionalComponent />
       <CountButton incrementBy={1}/>
-      <CountButton incrementBy={5}/>
+      <CountButton incrementBy={5} />
+      <SearchBar />
     </div>
   );
 }
