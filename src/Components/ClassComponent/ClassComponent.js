@@ -22,7 +22,8 @@ export default class classComponent extends Component {
     render() {
         return (
             <div className='container-inputOnchange'>
-                <h1>{this.state.title}</h1>
+
+                <h1>Hello Class {this.state.title}</h1>
                 <input type="text" value={this.state.title} onChange={this.inputHandler} />
             </div>
         )
