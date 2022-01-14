@@ -6,18 +6,20 @@ import Opdracht1 from './Pages/Opdracht1';
 import Opdracht2 from './Pages/Opdracht2';
 import Counter from './Pages/Counter';
 import Searchbar from './Pages/Searchbar';
+import Opdracht3 from './Pages/Opdracht3';
 
 function App() {
   return (
     <div className="App">
-      <h1>Test App</h1>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home message='Hello from APP!' />} />
         <Route path="/opdracht1" element={<Opdracht1 />} />
         <Route path="/opdracht2" element={<Opdracht2 />} />
+        <Route path="/Opdracht3" element={<Opdracht3 />} />
         <Route path="/Counter" element={<Counter />} />
         <Route path="/Searchbar" element={<Searchbar />} />
+
       </Routes>
 
 

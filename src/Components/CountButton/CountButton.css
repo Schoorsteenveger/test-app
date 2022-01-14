@@ -1,7 +1,7 @@
 .container-countBtn {
     display: inline-grid;
     margin: auto;
-    width: 10vw;
+    width: 100%;
     height: auto;
     justify-items: center;
     background-color: aqua;

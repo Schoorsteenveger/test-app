@@ -8,7 +8,7 @@ export default function Opdracht2() {
     const [title, setTitle] = useState('')
 
     const changeHandlerTitle = (event) => {
-
+        console.log(event)
         setTitle(event.target.value)
 
     }

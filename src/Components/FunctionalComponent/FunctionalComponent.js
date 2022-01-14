@@ -4,7 +4,7 @@ export default function FunctionalComponent({ }) {
     const [title, setTitle] = useState("")
 
     function inputHandler(event) {
-        console.log('USERTEXT', event.target.value)
+        // console.log('USERTEXT', event.target.value)
         setTitle(event.target.value)
     }
 
