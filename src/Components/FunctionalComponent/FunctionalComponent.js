@@ -1,27 +1,17 @@
 import React, { useState } from 'react'
 
-export default function FunctionalComponent() {
+export default function FunctionalComponent({ }) {
     const [title, setTitle] = useState("")
 
-    function inputHandler(text) {
-        console.log(text)
-        setTitle(text)
+    function inputHandler(event) {
+        console.log('USERTEXT', event.target.value)
+        setTitle(event.target.value)
     }
 
     return (
         <div className='container-inputOnchange'>
             <h1>Hello Function {title}</h1>
-            <input onChange={(e) => inputHandler(e.target.value)} />
+            <input onChange={inputHandler} />
         </div>
     )
 }
-
-
-// export default function FunctionalComponent() {
-//     return (
-//         <div>
-//             <input type="text" />
-//             <h1>Hoi</h1>
-//         </div>
-//     )
-// }

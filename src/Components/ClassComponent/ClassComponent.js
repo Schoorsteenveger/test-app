@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 export default class classComponent extends Component {
 
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
 
         this.state = {
             title: ""
@@ -30,30 +30,3 @@ export default class classComponent extends Component {
     }
 }
 
-// import React, { Component } from 'react'
-
-// export default class classComponent extends Component {
-
-//     constructor(props) {
-//         super(props)
-
-//         this.state = {
-//             title: "Text"
-//         }
-//     }
-
-//     inputHandler = (text) => {
-//         console.log(text)
-
-
-
-//     }
-//     render() {
-//         return (
-//             <div className='container-inputOnchange'>
-//                 <h1>{this.state.title}</h1>
-//                 <input type="text" onChange={(e) => this.inputHandler(e.target.value)} />
-//             </div>
-//         )
-//     }
-// }

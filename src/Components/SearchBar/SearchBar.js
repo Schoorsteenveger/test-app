@@ -12,7 +12,7 @@ const SearchBar = () => {
 
     return (
         <div>
-            <h2>Searchbar</h2>
+            <h2>Search bar</h2>
             <input className='inPutSearchBar' type="text" value={searchValue} onChange={handleInputChange} />
             {searchValue}
         </div>

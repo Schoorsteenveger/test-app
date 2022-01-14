@@ -10,7 +10,7 @@ export default function CountButton(props) {
 
     return (
         <div className='container-countBtn'>
-            <button className='btn-increment'onClick={handleClick}>+{props.incrementBy}</button>
+            <button className='btn-increment' onClick={handleClick}>+{props.incrementBy}</button>
             <h2>{currentCount}</h2>
         </div>
     )

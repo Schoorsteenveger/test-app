@@ -1,0 +1,30 @@
+.navbar {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 111, 111);
+    color: rgb(225, 225, 225);
+    display:flex;
+    padding: 1rem 2rem;
+    margin: 4rem 0;
+}
+
+div.links a {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    align-content: left;
+    width: 4.5em;
+    padding: 15px 25px;
+    color: #fff;
+    background-color: cadetblue;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+div.links a:hover{
+    background-color: rgb(70, 116, 118);
+    transition: ease-in 3ms;
+}
+
