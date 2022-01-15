@@ -2,26 +2,42 @@ import React, { useState } from 'react'
 import './SearchBar.css'
 
 
-const SearchBar = () => {
-    const [searchValue, setSearchValue] = useState('')
+const SearchBar = (props) => {
+    const [searchValue, setSearchValue] = useState('') // searchvalue is de de state..
 
     const handleInputChange = (event) => {
-        setSearchValue(event.target.value)
+        setSearchValue(event.target.value)// user typed in, stored in searchValue state..ustestate en is te delen met parentlevel app/component.
     }
 
-    // const handleClearClick = () => {
-    //     setSearchValue("")
-    // }
+    const handleClearClick = () => {
+        setSearchValue("")
+    }
 
-    return (
-        <div>
-            <h2>Search bar</h2>
-            <input className='inPutSearchBar' type="text" value={searchValue} onChange={handleInputChange} />
-            {searchValue}
-            <button>Clear</button>
-        </div>
+    const shouldDisplayButton = searchValue.length > 0 // = true when there's input.
+    
+   
+    const filteredProducts = props.products.filter((product) => {
+            return product.includes(searchValue)
+        }) //filteredProducts is de nieuwe array met de searchinput. React lifecycle. 
+    
 
-    )
-}
+        return (
+            <div className='containerSearchbar'>
+                <h2>Search bar</h2>
+                <input className='inPutSearchBar' type="text" value={searchValue} onChange={handleInputChange} />
+                {shouldDisplayButton && <button onClick={handleClearClick}>Clear</button>}
 
-export default SearchBar
+                <ul>
+                    {filteredProducts.map((product) => {
+                        return <li key={product}>{product}</li>
+
+                    })}
+                </ul>
+                
+
+            </div>
+
+        ) 
+    }
+
+    export default SearchBar

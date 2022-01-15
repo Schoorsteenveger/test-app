@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Home from './Pages/Home'
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
@@ -7,6 +7,7 @@ import Opdracht2 from './Pages/Opdracht2';
 import Counter from './Pages/Counter';
 import Searchbar from './Pages/Searchbar';
 import Opdracht3 from './Pages/Opdracht3';
+
 
 function App() {
   return (

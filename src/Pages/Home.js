@@ -1,6 +1,5 @@
 import React from 'react'
-import SearchBar from '../Components/SearchBar/SearchBar'
-import './Home.css'
+import './Home.scss'
 
 
 
@@ -11,7 +10,6 @@ function Home({ message }) {
     return (
         <div className='home'>
             <h1>Home opdrachten</h1>
-            <SearchBar />
         </div>
     )
 }

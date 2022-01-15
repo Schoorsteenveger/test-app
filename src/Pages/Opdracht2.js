@@ -16,7 +16,7 @@ export default function Opdracht2() {
     // Parent pagina met components
     return (
         <div>
-            <h1>Opdracht 2</h1>
+            <h2>Opdracht 2</h2>
             <ClassComponent2 title={title} changeHandlerTitle={changeHandlerTitle} />
             <FunctionalComponent2 title={title} changeHandlerTitle={changeHandlerTitle} />
         </div>

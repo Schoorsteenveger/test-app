@@ -1,14 +1,17 @@
 .container-countBtn {
-    display: inline-grid;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    justify-items: center;
-    background-color: aqua;
-    padding: 30px 70px;
-    font-size: 1.2em;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  background-color: aqua;
+  padding: 30px 70px;
+  font-size: 1.2em;
 }
-.btn-increment{
-    padding: 30px 70px;
-    font-size: 1.2em;
+
+.btn-increment {
+  padding: 30px 70px;
+  font-size: 1.2em;
 }
+/*# sourceMappingURL=CountButton.css.map */
